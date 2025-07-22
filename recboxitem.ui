@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>recBoxItem</class>
+ <widget class="QWidget" name="recBoxItem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>171</width>
+    <height>216</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>171</width>
+    <height>216</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="Item_bg" native="true">
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#Item_bg{
+	background-color:rgb(30, 30, 30);
+	border-radius: 12px;  
+}
+
+#Item_bg:hover{
+	background-color:rgb(40, 40, 40);
+}
+
+
+QLabel{
+color:rgb(255, 255, 255);
+background-color: transparent;
+}
+</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="leftMargin">
+       <number>12</number>
+      </property>
+      <property name="topMargin">
+       <number>12</number>
+      </property>
+      <property name="rightMargin">
+       <number>12</number>
+      </property>
+      <property name="bottomMargin">
+       <number>12</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="Item_icon">
+        <property name="minimumSize">
+         <size>
+          <width>142</width>
+          <height>142</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#Item_icon{
+	background-image:url(&quot;:/images/test_icon_2.jpg&quot;);
+background-repeat:no-repeat; 
+background-position:center center;
+border-radius: 10px;  
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="Item_name">
+        <property name="styleSheet">
+         <string notr="true">color:rgb(255, 255, 255);
+font-size:18px;</string>
+        </property>
+        <property name="text">
+         <string>From The Start</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="Item_singer">
+        <property name="styleSheet">
+         <string notr="true">color:rgb(255, 255, 255);
+font-size:12px;</string>
+        </property>
+        <property name="text">
+         <string>Spencer Stewart</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

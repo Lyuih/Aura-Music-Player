@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>commonPage</class>
+ <widget class="QWidget" name="commonPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1050</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="Common_bg" native="true">
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+color:rgb(255, 255, 255);
+background-color: transparent;
+}</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="Title">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size:36px;</string>
+        </property>
+        <property name="text">
+         <string>本地音乐</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="Message_box" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>3</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="Message">
+           <property name="styleSheet">
+            <string notr="true">font-size:20px;</string>
+           </property>
+           <property name="text">
+            <string>下载音乐数量：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="Music_num">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font-size:20px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>836</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="ListLabel_box" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>45</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="leftMargin">
+          <number>18</number>
+         </property>
+         <property name="topMargin">
+          <number>18</number>
+         </property>
+         <property name="rightMargin">
+          <number>18</number>
+         </property>
+         <property name="bottomMargin">
+          <number>18</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="Music_name">
+           <property name="styleSheet">
+            <string notr="true">font-size:15px;</string>
+           </property>
+           <property name="text">
+            <string>标题</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="Music_singer">
+           <property name="styleSheet">
+            <string notr="true">font-size:15px;</string>
+           </property>
+           <property name="text">
+            <string>歌手</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="Music_album">
+           <property name="styleSheet">
+            <string notr="true">font-size:15px;</string>
+           </property>
+           <property name="text">
+            <string>专辑</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="PageMusic_list">
+        <property name="styleSheet">
+         <string notr="true">QListWidget {
+    border: none;
+}
+
+/* --- 滚动条整体 --- */
+QScrollBar:vertical { /* 只针对垂直滚动条 */
+    border: none; /* 去除边框 */
+    background-color: #121212; /* 滚动条背景色，应与内容区背景色一致 */
+    width: 12px; /* 滚动条宽度 */
+    margin: 0px 0px 0px 0px; /* 上、右、下、左的边距 */
+}
+
+/* --- 滚动条滑块 (你拖动的那个块) --- */
+QScrollBar::handle:vertical {
+    background-color: #4A4A4A; /* 滑块颜色 */
+    min-height: 20px; /* 滑块最小高度 */
+    border-radius: 6px; /* 滑块圆角，使其成为圆角矩形 */
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #5A5A5A; /* 鼠标悬停时滑块颜色变亮 */
+}
+
+QScrollBar::handle:vertical:pressed {
+    background-color: #6A6A6A; /* 鼠标按下时滑块颜色再变亮 */
+}
+
+/* --- 上下两个箭头按钮 --- */
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    /* 我们不需要箭头，所以将它们隐藏 */
+    border: none;
+    background: none;
+    height: 0px;
+    width: 0px;
+}
+
+/* --- 在滑块上方和下方的区域 (add-page, sub-page) --- */
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    /* 这部分是滑道中，滑块之外的区域，我们也让它透明 */
+    background: none;
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
